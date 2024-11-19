@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"mpr121\startup_stm32f103xb.o"
+"mpr121\main.o"
+"mpr121\gpio.o"
+"mpr121\i2c.o"
+"mpr121\stm32f1xx_it.o"
+"mpr121\stm32f1xx_hal_msp.o"
+"mpr121\stm32f1xx_hal_gpio_ex.o"
+"mpr121\stm32f1xx_hal_i2c.o"
+"mpr121\stm32f1xx_hal.o"
+"mpr121\stm32f1xx_hal_rcc.o"
+"mpr121\stm32f1xx_hal_rcc_ex.o"
+"mpr121\stm32f1xx_hal_gpio.o"
+"mpr121\stm32f1xx_hal_dma.o"
+"mpr121\stm32f1xx_hal_cortex.o"
+"mpr121\stm32f1xx_hal_pwr.o"
+"mpr121\stm32f1xx_hal_flash.o"
+"mpr121\stm32f1xx_hal_flash_ex.o"
+"mpr121\stm32f1xx_hal_exti.o"
+"mpr121\stm32f1xx_hal_tim.o"
+"mpr121\stm32f1xx_hal_tim_ex.o"
+"mpr121\system_stm32f1xx.o"
+"mpr121\driver_oled.o"
+--strict --scatter "MPR121\MPR121.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MPR121.map" -o MPR121\MPR121.axf
