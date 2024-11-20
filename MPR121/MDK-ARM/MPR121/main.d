@@ -29,3 +29,5 @@ mpr121\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 mpr121\main.o: ../Core/Inc/i2c.h
 mpr121\main.o: ../Core/Inc/gpio.h
 mpr121\main.o: ../Drivers/my_drivers/driver_oled.h
+mpr121\main.o: ../Drivers/my_drivers/driver_MPR121.h
+mpr121\main.o: ../Core/Inc/i2c.h

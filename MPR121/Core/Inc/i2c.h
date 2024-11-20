@@ -16,6 +16,7 @@
   *
   ******************************************************************************
   */
+#define DELAY_TIME	20
 /* USER CODE END Header */
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __I2C_H__

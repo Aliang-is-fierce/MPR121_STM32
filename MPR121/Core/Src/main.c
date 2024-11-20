@@ -24,6 +24,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "driver_oled.h"
+#include "driver_MPR121.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,6 +91,7 @@ int main(void)
   MX_I2C1_Init();
   OLED_Init();
   OLED_Clear();
+  MPR121_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -105,8 +107,13 @@ int main(void)
 	  HAL_Delay(500);
 	  Led_Control(1, 0);
 	  HAL_Delay(500);
-	  OLED_PrintString(0, 0,"sfianf");  // 在 OLED 上显示接收到的字符
-	  HAL_Delay(500);
+	  //OLED_PrintString(0, 0,"sfianf");  // 在 OLED 上显示接收到的字符
+	 while( MPR121_IsTouched )
+	 {
+		 OLED_PrintString(0, 0,"sfianf");  // 在 OLED 上显示接收到的字符
+	 }
+	  
+	  
   }
   /* USER CODE END 3 */
 }

@@ -21,6 +21,7 @@
 "mpr121\stm32f1xx_hal_tim_ex.o"
 "mpr121\system_stm32f1xx.o"
 "mpr121\driver_oled.o"
+"mpr121\driver_mpr121.o"
 --strict --scatter "MPR121\MPR121.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
